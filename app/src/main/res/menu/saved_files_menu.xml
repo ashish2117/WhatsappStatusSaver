@@ -1,0 +1,33 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/new_first"
+            android:title="New First" />
+
+        <item
+            android:id="@+id/old_first"
+            android:title="Old First"/>
+    </group>
+
+    <item android:id="@+id/filter"
+        android:title="Filter" >
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/videos_and_images"
+                    android:title="Videos and Images"/>
+                <item
+                    android:id="@+id/images_only"
+                    android:title="Images Only" />
+                <item
+                    android:id="@+id/videos_only"
+                    android:title="Videos Only" />
+            </group>
+        </menu>
+    </item>
+
+
+</menu>

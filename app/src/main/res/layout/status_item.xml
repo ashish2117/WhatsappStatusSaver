@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/file_item_layout"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/icon"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/video_icon"
+            android:src="@drawable/ic_play_circle_outline_black_40dp"
+            android:padding="5dp">
+        </ImageView>
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:padding="5dp"
+            android:layout_marginTop="3dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:text="this is file name"
+                android:textSize="18sp"
+                android:id="@+id/saved_file_title"
+                android:ellipsize="middle"
+                android:singleLine="true">
+            </TextView>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="11/11/11 11:11pm"
+                    android:id="@+id/saved_file_time">
+                </TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="240KB"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/saved_file_size">
+                </TextView>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layoutDirection="rtl">
+
+                <Button
+                    android:id="@+id/shareButton"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:background="@drawable/ic_share_primary_24dp"
+                    android:layout_marginRight="7dp">
+                </Button>
+
+                <Button
+                    android:id="@+id/saveButton"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:background="@drawable/ic_file_download_primary_24dp"
+                    android:paddingLeft="25dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="1dp">
+                </Button>
+
+                <Button
+                    android:id="@+id/whatsapp_button"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:background="@drawable/whatsapp"
+                    android:paddingLeft="25dp"
+                    android:layout_marginRight="15dp">
+                </Button>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
